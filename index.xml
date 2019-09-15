@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on 细雨听风</title>
+    <link>https://jxlnssyly.github.io/</link>
+    <description>Recent content in Home on 细雨听风</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-ch</language>
+    <lastBuildDate>Mon, 26 Jun 2017 18:27:58 +0100</lastBuildDate>
+    
+	<atom:link href="https://jxlnssyly.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hello world</title>
+      <link>https://jxlnssyly.github.io/born/</link>
+      <pubDate>Sun, 15 Sep 2019 20:18:33 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/born/</guid>
+      <description> 种一棵树最好的时机是十年前，其次是现在 用博客记录工作、学习、生活中流逝的时间。
+回首几年写码生活，上家公司是最安逸，技术学习最自由的一家公司，待了三年，学习了Python、Django、Scrapy、Rails、Golang、React、Node等。
+但是毕竟写代码是一门技术，需要反复的练习，而且工作中不用的语言、框架，忘的速度极快。即使涉猎了这么多的语言与框架，可是工作中没有用到，最后都忘光了。
+为了杜绝这样的事再次出现，所以本博客应运而生。
+在这里，我定下写博客的目标:
+提高表达能力 提高总结能力 提高编码能力 最后，按照国际惯例:
+Hello World  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://jxlnssyly.github.io/about/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/about/</guid>
+      <description> 2013年起从事iOS开发 2018年开始转向区块链开发  </description>
+    </item>
+    
+  </channel>
+</rss>
