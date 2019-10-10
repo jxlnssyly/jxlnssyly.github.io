@@ -6,10 +6,22 @@
     <description>Recent content in 工作 on 细雨听风</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-ch</language>
-    <lastBuildDate>Mon, 16 Sep 2019 23:09:17 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 08:07:10 +0800</lastBuildDate>
     
 	<atom:link href="https://jxlnssyly.github.io/tags/%E5%B7%A5%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>找工作的总结</title>
+      <link>https://jxlnssyly.github.io/%E6%89%BE%E5%B7%A5%E4%BD%9C/</link>
+      <pubDate>Thu, 10 Oct 2019 08:07:10 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/%E6%89%BE%E5%B7%A5%E4%BD%9C/</guid>
+      <description>总结一下最近找工作的经历 2019-9月已经找到一份工作，但是工作时间为10-10-6，工作强度实在是太大，每天赶最后一班公交回家，每天晚上都失眠，每天睡觉做梦还在写代码，感觉身体受不了，于是在工作了4天之后，提出离职，继续找工作。
+昨天确定了新的工作，其中有2份offer，选择了区块链相关的，也是我比较想要去的行业，虽然工作条件比较差，看起来像是在酒店工作，这也没什么很大的关系。
+找工作非常花费精力，等待HR回复也是一个非常难熬的过程，千万不要裸辞，心理压力非常大，骑驴找马才是正确的找工作的方法。
+接下来回顾一下被问到比较多次的面试题 KVC(KeyValueCoding)  1 KVC 常用的方法 (1)赋值类方法 - (void)setValue:(nullable id)value forKey:(NSString *)key; - (void)setValue:(nullable id)value forKeyPath:(NSString *)keyPath; - (void)setValue:(nullable id)value forUndefinedKey:(NSString *)key; - (void)setValuesForKeysWithDictionary:(NSDictionary&amp;lt;NSString *, id&amp;gt; *)keyedValues; (2)取值类方法 // 能取得私有成员变量的值 - (id)valueForKey:(NSString *)key; - (id)valueForKeyPath:(NSString *)keyPath; - (NSDictionary *)dictionaryWithValuesForKeys:(NSArray *)keys;  KVC 底层实现原理 当一个对象调用setValue:forKey: 方法时,方法内部会做以下操作: 1.判断有没有指定key的set方法,如果有set方法,就会调用set方法,给该属性赋值 2.如果没有set方法,判断有没有跟key值相同且带有下划线的成员属性(_key).如果有,直接给该成员属性进行赋值 3.如果没有成员属性_key,判断有没有跟key相同名称的属性.如果有,直接给该属性进行赋值 4.如果都没有,就会调用 valueforUndefinedKey 和setValue:forUndefinedKey:方法   KVO的底层实现原理 (1)KVO 是基于 runtime 机制实现的 (2)当一个对象(假设是person对象,对应的类为 JLperson)的属性值age发生改变时,系统会自动生成一个继承自JLperson的类NSKVONotifying_JLPerson,在这个类的 setAge 方法里面调用 [super setAge:age]; [self willChangeValueForKey:@&amp;quot;age&amp;quot;]; [self didChangeValueForKey:@&amp;quot;age&amp;quot;]; 三个方法,而后面两个方法内部会主动调用 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&amp;lt;NSString *,id&amp;gt; *)change context:(void *)context方法,在该方法中可以拿到属性改变前后的值.</description>
+    </item>
     
     <item>
       <title>入职第一天</title>
