@@ -6,10 +6,28 @@
     <description>Recent content in REST on 细雨听风</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-ch</language>
-    <lastBuildDate>Thu, 14 Nov 2019 21:57:52 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 22:18:58 +0800</lastBuildDate>
     
 	<atom:link href="https://jxlnssyly.github.io/tags/rest/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3、什么是RESTful</title>
+      <link>https://jxlnssyly.github.io/3%E4%BB%80%E4%B9%88%E6%98%AFrestful/</link>
+      <pubDate>Fri, 15 Nov 2019 22:18:58 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/3%E4%BB%80%E4%B9%88%E6%98%AFrestful/</guid>
+      <description> RESTful API 具体什么样子  基本的URI 标准HTTP方法,如GET、POST、PUT、PATCH、DELETE 传输的数据媒体类型，如JSON、XML  现实举例  GET /users # 获取user列表 GET /users/12 # 查看某个具体的user POST /users #代表新建一个用户 PUT /users/12 # 更新user 12 DELETE /users/12 # 删除user 12  请求设计规范  URI使用名词、尽量使用复数，如/users URI使用嵌套表示关联关系，如/users/12/repos/5 使用正确的HTTP方法，如GET/POST/PUT/DELETE 不符合CRUD的情况: POST/action/子资源  响应设计规范  查询 分页 字段过滤 状态码 错误处理  安全  HTTPS 鉴权 限流  开发者友好  文档 超媒体  </description>
+    </item>
+    
+    <item>
+      <title>2、统一接口的限制</title>
+      <link>https://jxlnssyly.github.io/2.%E7%BB%9F%E4%B8%80%E6%8E%A5%E5%8F%A3%E7%9A%84%E9%99%90%E5%88%B6/</link>
+      <pubDate>Fri, 15 Nov 2019 22:07:45 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/2.%E7%BB%9F%E4%B8%80%E6%8E%A5%E5%8F%A3%E7%9A%84%E9%99%90%E5%88%B6/</guid>
+      <description> 资源的标识  资源是任何可以命名的事物、比如用户、评论等 每个资源可以通过URI被唯一地标识  通过表述来操作资源  表述就是Representation,比如JSON、XML等 客户端不能直接操作(比如SQL)服务端资源 客户端只能通过表述(比如JSON)来操作资源  自描述消息  每个消息(请求或响应)必须提供足够的信息让接受者理解 媒体类型(application/json、application/xml) HTTP方法:GET(查)、POST(增)、DELETE(删) 是否缓存：Cache-Control  超媒体作为应用状态引擎  超媒体: 带文字的链接 应用状态: 一个网页 引擎: 驱动、跳转 合起来：点击链接跳转到另一个网页  </description>
+    </item>
     
     <item>
       <title>1、初步认识REST</title>

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.55.6" />
-  <link rel="canonical" href="https://jxlnssyly.github.io/tags/">
+  <link rel="canonical" href="https://jxlnssyly.github.io/3%E4%BB%80%E4%B9%88%E6%98%AFrestful/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Tags | 细雨听风</title>
+  <title>3、什么是RESTful | 细雨听风</title>
 </head>
 
   <body>
@@ -168,7 +168,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -181,7 +181,7 @@
       
       
       
-      <a href="/tags/" aria-current="page">
+      <a href="/tags/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -210,66 +210,179 @@
         <div>
           
   <main id="main">
-    <h1>Tags</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      3、什么是RESTful
+    </h1>
+
+    <div class="date">
       
-        <li>
-          <h2>
-            <a href="/tags/life/">
+      
+      <strong aria-hidden="true">Publish date: </strong>2019-11-15
+      
+        
+      
+    </div>
+
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (1) life
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/tags/node.js/">
+              
+              <a href="https://jxlnssyly.github.io/tags/rest/">REST</a>
+            </li>
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (3) node.js
-            </a>
-          </h2>
+              
+              <a href="https://jxlnssyly.github.io/tags/node.js/">node.js</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#restful-api-%e5%85%b7%e4%bd%93%e4%bb%80%e4%b9%88%e6%a0%b7%e5%ad%90">
+            RESTful API 具体什么样子
+          </a>
         </li>
       
         <li>
-          <h2>
-            <a href="/tags/rest/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (3) REST
-            </a>
-          </h2>
+          
+          
+          
+          
+          <a href="#%e7%8e%b0%e5%ae%9e%e4%b8%be%e4%be%8b">
+            现实举例
+          </a>
         </li>
       
         <li>
-          <h2>
-            <a href="/tags/vlog/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (4) Vlog
-            </a>
-          </h2>
+          
+          
+          
+          
+          <a href="#%e8%af%b7%e6%b1%82%e8%ae%be%e8%ae%a1%e8%a7%84%e8%8c%83">
+            请求设计规范
+          </a>
         </li>
       
         <li>
-          <h2>
-            <a href="/tags/%E5%B7%A5%E4%BD%9C/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (2) 工作
-            </a>
-          </h2>
+          
+          
+          
+          
+          <a href="#%e5%93%8d%e5%ba%94%e8%ae%be%e8%ae%a1%e8%a7%84%e8%8c%83">
+            响应设计规范
+          </a>
         </li>
       
-    </ul>
+        <li>
+          
+          
+          
+          
+          <a href="#%e5%ae%89%e5%85%a8">
+            安全
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e5%bc%80%e5%8f%91%e8%80%85%e5%8f%8b%e5%a5%bd">
+            开发者友好
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+
+    
+
+<h2 id="restful-api-具体什么样子">RESTful API 具体什么样子</h2>
+
+<ul>
+<li>基本的URI</li>
+<li>标准HTTP方法,如GET、POST、PUT、PATCH、DELETE</li>
+<li>传输的数据媒体类型，如JSON、XML</li>
+</ul>
+
+<h2 id="现实举例">现实举例</h2>
+
+<ul>
+<li>GET /users # 获取user列表</li>
+<li>GET /users/12 # 查看某个具体的user</li>
+<li>POST /users #代表新建一个用户</li>
+<li>PUT /users/12 # 更新user 12</li>
+<li>DELETE /users/12 # 删除user 12</li>
+</ul>
+
+<h2 id="请求设计规范">请求设计规范</h2>
+
+<ul>
+<li>URI使用名词、尽量使用复数，如/users</li>
+<li>URI使用嵌套表示关联关系，如/users/12/repos/5</li>
+<li>使用正确的HTTP方法，如GET/POST/PUT/DELETE</li>
+<li>不符合CRUD的情况: POST/action/子资源</li>
+</ul>
+
+<h2 id="响应设计规范">响应设计规范</h2>
+
+<ul>
+<li>查询</li>
+<li>分页</li>
+<li>字段过滤</li>
+<li>状态码</li>
+<li>错误处理</li>
+</ul>
+
+<h2 id="安全">安全</h2>
+
+<ul>
+<li>HTTPS</li>
+<li>鉴权</li>
+<li>限流</li>
+</ul>
+
+<h2 id="开发者友好">开发者友好</h2>
+
+<ul>
+<li>文档</li>
+<li>超媒体</li>
+</ul>
+
   </main>
+  <div id="disqus-container">
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>

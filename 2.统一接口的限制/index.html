@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.55.6" />
-  <link rel="canonical" href="https://jxlnssyly.github.io/tags/">
+  <link rel="canonical" href="https://jxlnssyly.github.io/2.%E7%BB%9F%E4%B8%80%E6%8E%A5%E5%8F%A3%E7%9A%84%E9%99%90%E5%88%B6/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Tags | 细雨听风</title>
+  <title>2、统一接口的限制 | 细雨听风</title>
 </head>
 
   <body>
@@ -168,7 +168,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -181,7 +181,7 @@
       
       
       
-      <a href="/tags/" aria-current="page">
+      <a href="/tags/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -210,66 +210,140 @@
         <div>
           
   <main id="main">
-    <h1>Tags</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      2、统一接口的限制
+    </h1>
+
+    <div class="date">
       
-        <li>
-          <h2>
-            <a href="/tags/life/">
+      
+      <strong aria-hidden="true">Publish date: </strong>2019-11-15
+      
+        
+      
+    </div>
+
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (1) life
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/tags/node.js/">
+              
+              <a href="https://jxlnssyly.github.io/tags/rest/">REST</a>
+            </li>
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (3) node.js
-            </a>
-          </h2>
+              
+              <a href="https://jxlnssyly.github.io/tags/node.js/">node.js</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e8%b5%84%e6%ba%90%e7%9a%84%e6%a0%87%e8%af%86">
+            资源的标识
+          </a>
         </li>
       
         <li>
-          <h2>
-            <a href="/tags/rest/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (3) REST
-            </a>
-          </h2>
+          
+          
+          
+          
+          <a href="#%e9%80%9a%e8%bf%87%e8%a1%a8%e8%bf%b0%e6%9d%a5%e6%93%8d%e4%bd%9c%e8%b5%84%e6%ba%90">
+            通过表述来操作资源
+          </a>
         </li>
       
         <li>
-          <h2>
-            <a href="/tags/vlog/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (4) Vlog
-            </a>
-          </h2>
+          
+          
+          
+          
+          <a href="#%e8%87%aa%e6%8f%8f%e8%bf%b0%e6%b6%88%e6%81%af">
+            自描述消息
+          </a>
         </li>
       
         <li>
-          <h2>
-            <a href="/tags/%E5%B7%A5%E4%BD%9C/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (2) 工作
-            </a>
-          </h2>
+          
+          
+          
+          
+          <a href="#%e8%b6%85%e5%aa%92%e4%bd%93%e4%bd%9c%e4%b8%ba%e5%ba%94%e7%94%a8%e7%8a%b6%e6%80%81%e5%bc%95%e6%93%8e">
+            超媒体作为应用状态引擎
+          </a>
         </li>
       
-    </ul>
+    </ol>
+  </nav>
+
+
+    
+
+    
+
+<h2 id="资源的标识">资源的标识</h2>
+
+<ul>
+<li>资源是任何可以命名的事物、比如用户、评论等</li>
+<li>每个资源可以通过URI被唯一地标识</li>
+</ul>
+
+<h2 id="通过表述来操作资源">通过表述来操作资源</h2>
+
+<ul>
+<li>表述就是Representation,比如JSON、XML等</li>
+<li>客户端不能直接操作(比如SQL)服务端资源</li>
+<li>客户端只能通过表述(比如JSON)来操作资源</li>
+</ul>
+
+<h2 id="自描述消息">自描述消息</h2>
+
+<ul>
+<li>每个消息(请求或响应)必须提供足够的信息让接受者理解</li>
+<li>媒体类型(application/json、application/xml)</li>
+<li>HTTP方法:GET(查)、POST(增)、DELETE(删)</li>
+<li>是否缓存：Cache-Control</li>
+</ul>
+
+<h2 id="超媒体作为应用状态引擎">超媒体作为应用状态引擎</h2>
+
+<ul>
+<li>超媒体: 带文字的链接</li>
+<li>应用状态: 一个网页</li>
+<li>引擎: 驱动、跳转</li>
+<li>合起来：点击链接跳转到另一个网页</li>
+</ul>
+
   </main>
+  <div id="disqus-container">
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>
