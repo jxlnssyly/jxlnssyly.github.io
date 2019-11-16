@@ -6,10 +6,78 @@
     <description>Recent content in koa on 细雨听风</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-ch</language>
-    <lastBuildDate>Sat, 16 Nov 2019 09:19:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Nov 2019 14:54:05 +0800</lastBuildDate>
     
 	<atom:link href="https://jxlnssyly.github.io/tags/koa/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>11、koa与nosql</title>
+      <link>https://jxlnssyly.github.io/11koa%E4%B8%8Enosql/</link>
+      <pubDate>Sat, 16 Nov 2019 14:54:05 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/11koa%E4%B8%8Enosql/</guid>
+      <description>NoSQL简介 什么是NoSQL  对于不同于传统的关系型数据库的数据库管理系统的统称  NoSQL数据库的分类  列存储(HBase) 文档存储(MongoDB) Key-Value存储(Redis) 图存储(FlockDB) 对象存储(db4o) XML存储(BaseX)  为什么要用NoSQL  简单(没有原子性、一致性、隔离性等复杂规范) 便于横向拓展 适合超大规模数据的存储 很灵活地存储复杂结构的数据(Schema Free)  MongoDB 什么是MongoDB？  来自于英文单词&amp;rdquo;Humongous&amp;rdquo;，中文含义为&amp;rdquo;庞大&amp;rdquo; 面向文档存储的开源数据库 由C++编写  为什么要用MongoDB  性能好(内存计算) 大规模数据存储(可拓展性) 可靠安全(本地复制、自动故障转移) 方便存储复杂数据结构(Schema Free)  安装MongoDB  云MongoDB 阿里云、腾讯云(收费) MongoDB官方的MongoDB Atlas(免费+收费)  云MongoDB  注册用户 创建集群 添加数据库用户 设置IP地址白名单 获取连接地址  用Mongoose 连接MongoDB  安装Mongoose
+npm i mongoose --save  用Mongoose连接MongoDB
+const {connectionStr} = require(&#39;./config&#39;); const mongoose = require(&#39;mongoose&#39;); mongoose.</description>
+    </item>
+    
+    <item>
+      <title>10、错误处理</title>
+      <link>https://jxlnssyly.github.io/10%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/</link>
+      <pubDate>Sat, 16 Nov 2019 13:54:43 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/10%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/</guid>
+      <description>错误处理简介 异常状况有哪些  运行时错误，都返回500 逻辑错误，如找不到(404)、先决条件失败(412)、无法处理的实体(参数格式不对,422)等  为什么要用错误处理  防止程序挂掉 告诉用户错误信息 便于开发者调试  Koa自带的错误处理  制造404、412、500  自己编写错误中间件 # 在所有的中间件之前做处理 app.use(async (ctx, next) =&amp;gt; { try { await next(); } catch (e) { ctx.status = e.status || e.statusCode || 500; ctx.body = { message: e.message } } })  使用koa-json-error进行错误处理  安装Koa-json-error
+npm i koa-json-error --save  使用koa-json-error的默认配置处理错误
+const error = require(&#39;koa-json-error&#39;); app.use(error());  修改配置使其在生产环境下禁用错误堆栈的返回
+const error = require(&#39;koa-json-error&#39;); # 去除堆栈信息，堆栈信息里面有文件路径 app.</description>
+    </item>
+    
+    <item>
+      <title>9、控制器简介</title>
+      <link>https://jxlnssyly.github.io/9%E6%8E%A7%E5%88%B6%E5%99%A8%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Sat, 16 Nov 2019 10:49:32 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/9%E6%8E%A7%E5%88%B6%E5%99%A8%E7%AE%80%E4%BB%8B/</guid>
+      <description>什么是控制器  拿到路由分配的任务,并执行 在Koa中是一个中间件  为什么要用控制器  获取HTTP请求参数 处理业务逻辑 发送HTTP响应  获取HTTP请求参数  Query String, 如?q=keyword Router Params, 如/users/:id Body, 如{name: &amp;lsquo;李雷&amp;rsquo;} Header，如Accept、Cookie  发送HTTP响应  发送Status,如200/400等 发送Body, 如{name: &amp;lsquo;李雷&amp;rsquo;} 发送Header，如Allow，Content-Type  编写控制器最佳实践  每个资源的控制器放在不同的文件里 尽量使用类+类方法的形式编写控制器 严谨的错误处理  获取HTTP请求参数  学习断点调试 获取query
+ctx.query  获取router params
+ctx.params  获取body
+#需要安装node包koa-bodyparser npm i koa-bodyparser --save # 导入包 const parser = require(&#39;koa-bodyparser&#39;) app.use(parser()) # 获取body ctx.request.body  获取Header
+ctx.header   HTTP响应  发送status</description>
+    </item>
+    
+    <item>
+      <title>8、HTTP options</title>
+      <link>https://jxlnssyly.github.io/8http/</link>
+      <pubDate>Sat, 16 Nov 2019 10:31:03 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/8http/</guid>
+      <description> HTTP options方法的作用是什么  检测服务器所支持的请求方法 CORS中的预检请求  allowedMethods的作用  响应options方法，告诉它所支持的请求方法 相应地返回405(不允许)和501(未实现)  RESTful API最佳实践 usersRouter.get(&#39;/&#39; , (ctx) =&amp;gt; { ctx.body = [{name: &#39;李雷&#39;}, {name: &#39;韩梅梅&#39;}]; }); usersRouter.post(&#39;/&#39; , (ctx) =&amp;gt; { ctx.body = {name: &#39;李雷&#39;}; }); usersRouter.get(&#39;/:id&#39; , (ctx) =&amp;gt; { ctx.body = {name: &#39;李雷&#39;} }); usersRouter.put(&#39;/:id&#39; , (ctx) =&amp;gt; { ctx.body = {name: &#39;李雷2&#39;} }); usersRouter.delete(&#39;/:id&#39; , (ctx) =&amp;gt; { ctx.status = 204; });  </description>
+    </item>
+    
+    <item>
+      <title>7、Koa Router实现路由</title>
+      <link>https://jxlnssyly.github.io/7koa-router%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1/</link>
+      <pubDate>Sat, 16 Nov 2019 10:06:27 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/7koa-router%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1/</guid>
+      <description>更优雅地实现基本功能  安装Koa-Router
+npm i koa-router --save  使用Koa-Router
+const Koa = require(&#39;koa&#39;); const Router = require(&#39;koa-router&#39;); const app = new Koa(); const router = new Router(); router.get(&#39;/&#39;, (ctx) =&amp;gt; { ctx.body = &#39;这是主页&#39;; }); router.get(&#39;/users&#39;, (ctx) =&amp;gt; { ctx.body = &#39;这是用户列表&#39;; }); router.post(&#39;/users&#39;, (ctx) =&amp;gt; { ctx.body = &#39;这是创建用户&#39;; }); router.get(&#39;/users/:id&#39;, (ctx) =&amp;gt; { ctx.body = `这是用户 ${ctx.params.id}` }) app.use(router.routes()); app.listen(3000);   路由前缀，多中间用法 const Koa = require(&#39;koa&#39;); const Router = require(&#39;koa-router&#39;); const app = new Koa(); const router = new Router(); const usersRouter = new Router({prefix: &#39;/users&#39;}); const auth = async (ctx, next) =&amp;gt; { if (ctx.</description>
+    </item>
+    
+    <item>
+      <title>6、Koa路由初识</title>
+      <link>https://jxlnssyly.github.io/6koa%E8%B7%AF%E7%94%B1%E5%88%9D%E8%AF%86/</link>
+      <pubDate>Sat, 16 Nov 2019 09:43:51 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/6koa%E8%B7%AF%E7%94%B1%E5%88%9D%E8%AF%86/</guid>
+      <description>路由是什么？  决定了不同URL是如何被不同地执行的 在Koa中，路由本质是一个中间件  为什么要用路由?  如果没有路由，会怎么样？
+1、没有路由，所有的请求都做了相同的事 2、没有路由，所有的请求都会返回相同的结果   路由存在的意义? 1、处理不同的URL 2、处理不同的HTTP方法 3、解析URL上的参数  自己编写路由中间件  处理不同的URL
+app.use(async (ctx) =&amp;gt; { if (ctx.url === &#39;/&#39;) { ctx.body = &#39;这是主页&#39;; } else if (ctx.url === &#39;/users&#39;) { ctx.body = &#39;这是用户列表页&#39;; } else { ctx.status = 404; } });  处理不同的HTTP方法
+app.use(async (ctx) =&amp;gt; { if (ctx.url === &#39;/&#39;) { ctx.body = &#39;这是主页&#39;; } else if (ctx.url === &#39;/users&#39;) { if (ctx.</description>
+    </item>
     
     <item>
       <title>5、koa中间件和洋葱模型</title>
