@@ -3,30 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jxlnssyly.github.io/3%E4%BB%80%E4%B9%88%E6%98%AFrestful/</loc>
-    <lastmod>2019-11-15T22:18:58+08:00</lastmod>
+    <loc>https://jxlnssyly.github.io/5koa%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%92%8C%E6%B4%8B%E8%91%B1%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2019-11-16T09:19:52+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://jxlnssyly.github.io/post/</loc>
-    <lastmod>2019-11-15T22:18:58+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jxlnssyly.github.io/tags/rest/</loc>
-    <lastmod>2019-11-15T22:18:58+08:00</lastmod>
+    <lastmod>2019-11-16T09:19:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jxlnssyly.github.io/tags/</loc>
-    <lastmod>2019-11-15T22:18:58+08:00</lastmod>
+    <lastmod>2019-11-16T09:19:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jxlnssyly.github.io/tags/koa/</loc>
+    <lastmod>2019-11-16T09:19:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jxlnssyly.github.io/tags/node.js/</loc>
+    <lastmod>2019-11-16T09:19:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jxlnssyly.github.io/4koa/</loc>
+    <lastmod>2019-11-16T08:52:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jxlnssyly.github.io/3%E4%BB%80%E4%B9%88%E6%98%AFrestful/</loc>
+    <lastmod>2019-11-15T22:18:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jxlnssyly.github.io/tags/rest/</loc>
     <lastmod>2019-11-15T22:18:58+08:00</lastmod>
     <priority>0</priority>
   </url>

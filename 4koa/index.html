@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.55.6" />
-  <link rel="canonical" href="https://jxlnssyly.github.io/tags/node.js/">
+  <link rel="canonical" href="https://jxlnssyly.github.io/4koa/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>node.js | 细雨听风</title>
+  <title>4、koa入门 | 细雨听风</title>
 </head>
 
   <body>
@@ -168,7 +168,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -181,7 +181,7 @@
       
       
       
-      <a href="/tags/" aria-current="page">
+      <a href="/tags/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -210,66 +210,150 @@
         <div>
           
   <main id="main">
-    <h1>node.js</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      4、koa入门
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong aria-hidden="true">Publish date: </strong>2019-11-16
+      
+        
+      
+    </div>
+
     
-      <li>
-        <h2>
-          <a href="https://jxlnssyly.github.io/5koa%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%92%8C%E6%B4%8B%E8%91%B1%E6%A8%A1%E5%9E%8B/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            5、koa中间件和洋葱模型
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://jxlnssyly.github.io/tags/koa/">koa</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://jxlnssyly.github.io/tags/node.js/">node.js</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#koa%e7%ae%80%e4%bb%8b">
+            Koa简介
           </a>
-        </h2>
-      </li>        
-    
-      <li>
-        <h2>
-          <a href="https://jxlnssyly.github.io/4koa/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            4、koa入门
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e7%ac%ac%e4%b8%80%e4%b8%aakoa%e7%a8%8b%e5%ba%8f">
+            第一个Koa程序
           </a>
-        </h2>
-      </li>        
+        </li>
+      
+    </ol>
+  </nav>
+
+
     
-      <li>
-        <h2>
-          <a href="https://jxlnssyly.github.io/3%E4%BB%80%E4%B9%88%E6%98%AFrestful/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            3、什么是RESTful
-          </a>
-        </h2>
-      </li>        
+
     
-      <li>
-        <h2>
-          <a href="https://jxlnssyly.github.io/2.%E7%BB%9F%E4%B8%80%E6%8E%A5%E5%8F%A3%E7%9A%84%E9%99%90%E5%88%B6/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            2、统一接口的限制
-          </a>
-        </h2>
-      </li>        
-    
-      <li>
-        <h2>
-          <a href="https://jxlnssyly.github.io/1.%E8%AE%A4%E8%AF%86restapi/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            1、初步认识REST
-          </a>
-        </h2>
-      </li>        
-    
-    </ul>
+
+<h2 id="koa简介">Koa简介</h2>
+
+<ul>
+<li>基于Node.js的下一代Web框架
+
+<ul>
+<li>基于Node.js: Node.js模块</li>
+<li>下一代: 蚕食第一代Web框架Express的市场</li>
+<li>Web框架: 不是命令行工具、不是算法</li>
+</ul></li>
+<li>由Express幕后的原班人马打造</li>
+<li>Web应用和API开发领域</li>
+<li>更小、更富有表现力、更健壮</li>
+<li>利用async函数、丢弃回调函数</li>
+<li>增强错误处理: try catch</li>
+<li>没有捆绑任何中间件</li>
+<li>快速而愉快地编写程序</li>
+</ul>
+
+<h2 id="第一个koa程序">第一个Koa程序</h2>
+
+<ul>
+<li><p>初始化项目</p>
+
+<pre><code># 创建项目文件夹
+mkdir zhihu-api
+# 进入项目文件夹
+cd zhihu-api
+# 初始化npm
+npm init
+</code></pre></li>
+
+<li><p>安装Koa</p>
+
+<pre><code># npm安装Koa
+npm i koa --save
+</code></pre></li>
+
+<li><p>编写hello world</p>
+
+<pre><code># 引入koa
+const Koa = require('koa');
+# 实例化koa
+const app = new Koa();
+# 设置响应
+app.use( () =&gt; {
+	ctx.body = &quot;hello world&quot;
+});
+# 设置监听端口
+app.listen(3000);
+</code></pre></li>
+
+<li><p>设置自动重启</p>
+
+<pre><code># 安装nodemon,并且只在dev环境使用
+npm i nodemon --save-dev
+# 编写package.json 里面的scripts
+scripts: {
+	&quot;start&quot;: &quot;nodemon index.js&quot;
+}
+</code></pre></li>
+</ul>
+
   </main>
+  <div id="disqus-container">
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>

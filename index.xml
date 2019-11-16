@@ -12,6 +12,27 @@
     
     
     <item>
+      <title>5、koa中间件和洋葱模型</title>
+      <link>https://jxlnssyly.github.io/5koa%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%92%8C%E6%B4%8B%E8%91%B1%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sat, 16 Nov 2019 09:19:52 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/5koa%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%92%8C%E6%B4%8B%E8%91%B1%E6%A8%A1%E5%9E%8B/</guid>
+      <description>学习async await # 要使用await必须在async的函数里面 (async () =&amp;gt; { const rest = await fetch(&#39;//api.github.com/users&#39;); const json = await rest.json(); console.log(json) const rest2 = await fetch(&#39;//api.github.com/users/lewis617&#39;); const json2 = await rest2.json(); console.log(json2) })()  编写Koa中间件 const Koa = require(&#39;koa&#39;); const app = new Koa(); # 中间件1 next表示中间件2 app.use(async (ctx, next) =&amp;gt; { await next(); # 执行中间件2 ctx.body = &#39;Hello zhihu&#39;; }); # 中间件2 app.use(async (ctx) =&amp;gt; { console.log(&#39;2&#39;) }) app.listen(3000);  学习洋葱模型 const Koa = require(&#39;koa&#39;); const app = new Koa(); const PORT = 3000; // #1 app.</description>
+    </item>
+    
+    <item>
+      <title>4、koa入门</title>
+      <link>https://jxlnssyly.github.io/4koa/</link>
+      <pubDate>Sat, 16 Nov 2019 08:52:37 +0800</pubDate>
+      
+      <guid>https://jxlnssyly.github.io/4koa/</guid>
+      <description>Koa简介  基于Node.js的下一代Web框架  基于Node.js: Node.js模块 下一代: 蚕食第一代Web框架Express的市场 Web框架: 不是命令行工具、不是算法  由Express幕后的原班人马打造 Web应用和API开发领域 更小、更富有表现力、更健壮 利用async函数、丢弃回调函数 增强错误处理: try catch 没有捆绑任何中间件 快速而愉快地编写程序  第一个Koa程序  初始化项目
+# 创建项目文件夹 mkdir zhihu-api # 进入项目文件夹 cd zhihu-api # 初始化npm npm init  安装Koa
+# npm安装Koa npm i koa --save  编写hello world
+# 引入koa const Koa = require(&#39;koa&#39;); # 实例化koa const app = new Koa(); # 设置响应 app.use( () =&amp;gt; { ctx.body = &amp;quot;hello world&amp;quot; }); # 设置监听端口 app.</description>
+    </item>
+    
+    <item>
       <title>3、什么是RESTful</title>
       <link>https://jxlnssyly.github.io/3%E4%BB%80%E4%B9%88%E6%98%AFrestful/</link>
       <pubDate>Fri, 15 Nov 2019 22:18:58 +0800</pubDate>
