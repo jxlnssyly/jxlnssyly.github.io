@@ -3,32 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jxlnssyly.github.io/11koa%E4%B8%8Enosql/</loc>
-    <lastmod>2019-11-16T14:54:05+08:00</lastmod>
+    <loc>https://jxlnssyly.github.io/12jwt/</loc>
+    <lastmod>2019-11-17T21:17:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://jxlnssyly.github.io/post/</loc>
-    <lastmod>2019-11-16T14:54:05+08:00</lastmod>
+    <lastmod>2019-11-17T21:17:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jxlnssyly.github.io/tags/</loc>
-    <lastmod>2019-11-16T14:54:05+08:00</lastmod>
+    <lastmod>2019-11-17T21:17:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jxlnssyly.github.io/tags/koa/</loc>
-    <lastmod>2019-11-16T14:54:05+08:00</lastmod>
+    <lastmod>2019-11-17T21:17:41+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jxlnssyly.github.io/tags/node.js/</loc>
-    <lastmod>2019-11-16T14:54:05+08:00</lastmod>
+    <lastmod>2019-11-17T21:17:41+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jxlnssyly.github.io/11koa%E4%B8%8Enosql/</loc>
+    <lastmod>2019-11-16T14:54:05+08:00</lastmod>
   </url>
   
   <url>
